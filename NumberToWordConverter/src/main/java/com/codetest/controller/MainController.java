@@ -34,7 +34,8 @@ public class MainController {
 				String newNum=orgNumber.replaceAll(",", "");		
 				numberValidator.validateNumber(newNum);
 				Integer number=Integer.parseInt(newNum);
-				result=numtowordService.numberToWord(number);				
+				result=numtowordService.numberToWord(number);	
+				System.out.println(result);
 			
 			}catch(InvalidNumberException e) {
 				return e.getMessage();

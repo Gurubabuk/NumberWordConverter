@@ -35,7 +35,6 @@ public class MainController {
 				numberValidator.validateNumber(newNum);
 				Integer number=Integer.parseInt(newNum);
 				result=numtowordService.numberToWord(number);	
-			
 			}catch(InvalidNumberException e) {
 				return e.getMessage();
 			}catch(Exception e) {		

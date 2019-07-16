@@ -42,15 +42,13 @@ public class NumberToWordTestCases {
         this.input = input;
         this.expected = expected;
     }
-    
-	
-
+   
     @Test
     public void NumberToWordTest() {
-    	NumberToWordService c=new NumberToWordService();
-        assertEquals(expected.toLowerCase(), c.numberToWord(input).toLowerCase());
+    	NumberToWordService ntws=new NumberToWordService();
+        assertEquals(expected.toLowerCase(), ntws.numberToWord(input).toLowerCase());
         
     }
-
+    
 }
 
